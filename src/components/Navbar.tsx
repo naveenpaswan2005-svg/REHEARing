@@ -8,10 +8,7 @@ import logo from "@/assets/rehearing-logo.png";
 const navLinks = [
   { name: "Home", href: "home" },
   { name: "Services", href: "services" },
-  { name: "Hearing Aids", href: "hearing-aids" },
   { name: "Products", href: "products" },
-  { name: "Brands", href: "brands" },
-  { name: "Reviews", href: "reviews" },
   { name: "FAQ", href: "faq" },
   { name: "Contact", href: "contact" },
 ];
