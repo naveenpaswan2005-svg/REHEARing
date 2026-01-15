@@ -6,107 +6,107 @@
 
 @layer base {
   :root {
-    /* REHEARing Brand Colors - Navy Blue Theme */
+    /* REHEARing Brand Colors - Royal Purple Matte Theme */
     --background: 0 0% 100%;
-    --foreground: 224 35% 20%;
+    --foreground: 270 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 224 35% 20%;
+    --card-foreground: 270 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 35% 20%;
+    --popover-foreground: 270 25% 15%;
 
-    /* Primary - Deep Navy Blue from logo */
-    --primary: 231 41% 29%;
+    /* Primary - Royal Purple */
+    --primary: 270 50% 40%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Soft Lavender */
-    --secondary: 240 20% 96%;
-    --secondary-foreground: 231 41% 29%;
+    --secondary: 270 30% 97%;
+    --secondary-foreground: 270 50% 40%;
 
     /* Muted */
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 270 15% 96%;
+    --muted-foreground: 270 10% 45%;
 
     /* Accent - Light Purple Tint */
-    --accent: 255 30% 95%;
-    --accent-foreground: 231 41% 29%;
+    --accent: 270 40% 95%;
+    --accent-foreground: 270 50% 40%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 231 41% 29%;
+    --border: 270 15% 90%;
+    --input: 270 15% 90%;
+    --ring: 270 50% 40%;
 
     --radius: 1rem;
 
     /* Custom Brand Variables */
-    --navy: 231 41% 29%;
-    --navy-light: 231 35% 45%;
-    --navy-dark: 231 45% 20%;
-    --purple-soft: 255 30% 95%;
-    --purple-muted: 255 20% 90%;
+    --purple: 270 50% 40%;
+    --purple-light: 270 45% 55%;
+    --purple-dark: 270 55% 30%;
+    --purple-soft: 270 40% 97%;
+    --purple-muted: 270 25% 92%;
     --gold: 45 93% 47%;
     --success: 142 76% 36%;
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(231 41% 29% / 0.08);
-    --shadow-medium: 0 8px 30px -6px hsl(231 41% 29% / 0.12);
-    --shadow-strong: 0 12px 40px -8px hsl(231 41% 29% / 0.18);
-    --shadow-card: 0 2px 12px -2px hsl(231 41% 29% / 0.06);
-    --shadow-card-hover: 0 8px 30px -6px hsl(231 41% 29% / 0.15);
+    /* Shadows - Matte finish with subtle depth */
+    --shadow-soft: 0 4px 20px -4px hsl(270 50% 40% / 0.06);
+    --shadow-medium: 0 8px 30px -6px hsl(270 50% 40% / 0.10);
+    --shadow-strong: 0 12px 40px -8px hsl(270 50% 40% / 0.14);
+    --shadow-card: 0 2px 16px -2px hsl(270 50% 40% / 0.04);
+    --shadow-card-hover: 0 8px 30px -6px hsl(270 50% 40% / 0.12);
 
     /* Sidebar */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5% 26%;
-    --sidebar-primary: 231 41% 29%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 270 25% 20%;
+    --sidebar-primary: 270 50% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 5% 96%;
-    --sidebar-accent-foreground: 231 41% 29%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 231 41% 29%;
+    --sidebar-accent: 270 30% 96%;
+    --sidebar-accent-foreground: 270 50% 40%;
+    --sidebar-border: 270 15% 92%;
+    --sidebar-ring: 270 50% 40%;
   }
 
   .dark {
-    --background: 224 35% 8%;
+    --background: 270 25% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 224 35% 12%;
+    --card: 270 25% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 224 35% 12%;
+    --popover: 270 25% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 255 80% 70%;
-    --primary-foreground: 224 35% 8%;
+    --primary: 270 60% 65%;
+    --primary-foreground: 270 25% 8%;
 
-    --secondary: 224 30% 18%;
+    --secondary: 270 20% 18%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 224 30% 18%;
-    --muted-foreground: 220 14% 60%;
+    --muted: 270 20% 18%;
+    --muted-foreground: 270 15% 60%;
 
-    --accent: 224 30% 18%;
+    --accent: 270 20% 18%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 224 30% 18%;
-    --input: 224 30% 18%;
-    --ring: 255 80% 70%;
+    --border: 270 20% 18%;
+    --input: 270 20% 18%;
+    --ring: 270 60% 65%;
 
-    --sidebar-background: 224 35% 10%;
+    --sidebar-background: 270 25% 10%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 255 80% 70%;
-    --sidebar-primary-foreground: 224 35% 8%;
-    --sidebar-accent: 224 30% 15%;
+    --sidebar-primary: 270 60% 65%;
+    --sidebar-primary-foreground: 270 25% 8%;
+    --sidebar-accent: 270 20% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 224 30% 18%;
-    --sidebar-ring: 255 80% 70%;
+    --sidebar-border: 270 20% 18%;
+    --sidebar-ring: 270 60% 65%;
   }
 }
 
@@ -132,7 +132,7 @@
 @layer components {
   /* Service Card Styles */
   .service-card {
-    @apply bg-card rounded-2xl p-6 transition-all duration-300 ease-out;
+    @apply bg-card rounded-2xl p-6 transition-all duration-300 ease-out border border-border/50;
     box-shadow: var(--shadow-card);
   }
 
@@ -143,7 +143,7 @@
 
   /* Product Card Styles */
   .product-card {
-    @apply bg-card rounded-2xl overflow-hidden transition-all duration-300 ease-out;
+    @apply bg-card rounded-2xl overflow-hidden transition-all duration-300 ease-out border border-border/50;
     box-shadow: var(--shadow-card);
   }
 
@@ -181,6 +181,17 @@
   .brand-logo {
     @apply grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100;
   }
+
+  /* Matte Card Style */
+  .matte-card {
+    @apply bg-card rounded-3xl border border-border/40 transition-all duration-400;
+    box-shadow: var(--shadow-card);
+    background: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(270 30% 99%) 100%);
+  }
+
+  .matte-card:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
 }
 
 @layer utilities {
@@ -199,6 +210,10 @@
 
   .animate-slide-in-right {
     animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
   }
 
   @keyframes fadeIn {
@@ -243,10 +258,30 @@
     }
   }
 
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Stagger animation delays */
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
   .delay-500 { animation-delay: 500ms; }
+
+  /* Scrollbar hide */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
