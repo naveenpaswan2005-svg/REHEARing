@@ -20,7 +20,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="section-container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-6 items-center min-h-[calc(100vh-5rem)]">
+        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-5rem)]">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
