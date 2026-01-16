@@ -56,7 +56,8 @@ export const WhyChooseUs = () => {
               Why REHEARing?
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Delhi's Most Trusted Hearing Care Clinic
+              <span className="text-primary-foreground">Delhi's Most Trusted </span>
+              <span className="text-accent">Hearing Care Clinic</span>
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
               At REHEARing, we combine clinical expertise with compassionate care. 
