@@ -40,8 +40,9 @@ export const ProductSlider = () => {
   const filteredProducts = activeCategory === "all" 
     ? products 
     : products.filter(p => {
-        if (activeCategory === "resound") return p.brand.toLowerCase() === "resound";
-        return p.brand.toLowerCase() === activeCategory.toLowerCase();
+        const productBrand = p.brand.toLowerCase().replace(/\s+/g, '');
+        const categoryBrand = activeCategory.toLowerCase().replace(/\s+/g, '');
+        return productBrand === categoryBrand;
       });
 
   const openWhatsApp = (product: Product) => {
