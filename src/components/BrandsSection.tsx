@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import brandSignia from "@/assets/brand-signia.jpg";
 import brandWidex from "@/assets/brand-widex.jpg";
@@ -6,13 +7,19 @@ import brandPhonak from "@/assets/brand-phonak.jpg";
 import brandResound from "@/assets/brand-resound.jpg";
 
 const brands = [
-  { name: "Signia", logo: brandSignia },
-  { name: "Widex", logo: brandWidex },
-  { name: "Phonak", logo: brandPhonak },
-  { name: "ReSound", logo: brandResound },
+  { name: "Signia", logo: brandSignia, slug: "signia" },
+  { name: "Widex", logo: brandWidex, slug: "widex" },
+  { name: "Phonak", logo: brandPhonak, slug: "phonak" },
+  { name: "ReSound", logo: brandResound, slug: "resound" },
 ];
 
 export const BrandsSection = () => {
+  const navigate = useNavigate();
+
+  const handleBrandClick = (slug: string) => {
+    navigate(`/brands/${slug}`);
+  };
+
   return (
     <section id="brands" className="bg-background">
       <div className="section-container">
@@ -44,7 +51,8 @@ export const BrandsSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group"
+              className="group cursor-pointer"
+              onClick={() => handleBrandClick(brand.slug)}
             >
               <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 flex items-center justify-center h-40">
                 <img
@@ -70,7 +78,8 @@ export const BrandsSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="flex-shrink-0 w-[200px] snap-center"
+                className="flex-shrink-0 w-[200px] snap-center cursor-pointer"
+                onClick={() => handleBrandClick(brand.slug)}
               >
                 <div className="bg-card rounded-2xl p-6 shadow-card flex items-center justify-center h-32">
                   <img
