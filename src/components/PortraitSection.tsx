@@ -118,7 +118,7 @@ export const PortraitSection = ({ variant = "exam" }: PortraitSectionProps) => {
           </motion.div>
         </div>
 
-        
+      </div>
 
       {/* Bottom CTA Banner */}
       <motion.div
