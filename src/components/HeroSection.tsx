@@ -12,7 +12,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen pt-4 overflow-hidden bg-gradient-to-br from-background via-background to-purple-soft">
+    <section id="home" className="relative min-h-screen pt-0 overflow-hidden bg-gradient-to-br from-background via-background to-purple-soft">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
