@@ -118,30 +118,7 @@ export const PortraitSection = ({ variant = "exam" }: PortraitSectionProps) => {
           </motion.div>
         </div>
 
-        {/* Decorative floating icons */}
-        <div className="flex justify-center gap-8 mt-16">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="w-16 h-16 bg-accent rounded-full flex items-center justify-center"
-          >
-            <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M4 12h16M12 4v16" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center"
-          >
-            <span className="text-2xl">😊</span>
-          </motion.div>
-        </div>
-      </div>
+        
 
       {/* Bottom CTA Banner */}
       <motion.div
