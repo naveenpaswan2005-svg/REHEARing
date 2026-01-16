@@ -20,13 +20,13 @@ export const HeroSection = () => {
       </div>
 
       <div className="section-container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-5rem)]">
+        <div className="grid lg:grid-cols-2 gap-10 items-center min-h-[calc(100vh-5rem)]">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-8"
+            className="space-y-6"
           >
             {/* Badge */}
             <motion.div
