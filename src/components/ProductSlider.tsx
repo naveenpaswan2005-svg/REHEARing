@@ -12,10 +12,10 @@ import stylettoImage from "@/assets/product-styletto-hearing-aid.png";
 
 const categories = [
   { id: "all", label: "All Products" },
-  { id: "digital", label: "Digital" },
-  { id: "invisible", label: "Invisible" },
-  { id: "rechargeable", label: "Rechargeable" },
-  { id: "bluetooth", label: "Bluetooth" },
+  { id: "signia", label: "Signia" },
+  { id: "widex", label: "Widex" },
+  { id: "phonak", label: "Phonak" },
+  { id: "resound", label: "ReSound" },
 ];
 
 const getProductImage = (type: string, brand: string) => {
@@ -40,10 +40,8 @@ export const ProductSlider = () => {
   const filteredProducts = activeCategory === "all" 
     ? products 
     : products.filter(p => {
-        if (activeCategory === "bluetooth") return p.connectivity.includes("Bluetooth");
-        if (activeCategory === "rechargeable") return p.battery.includes("Li-ion") || p.battery.includes("Rechargeable");
-        if (activeCategory === "invisible") return p.type.includes("CIC") || p.type.includes("IIC") || p.type.includes("ITC");
-        return true;
+        if (activeCategory === "resound") return p.brand.toLowerCase() === "resound";
+        return p.brand.toLowerCase() === activeCategory.toLowerCase();
       });
 
   const openWhatsApp = (product: Product) => {
