@@ -57,7 +57,7 @@ export const HeroSection = () => {
                       </div>
 
                       {/* Stats */}
-                      <div className="flex flex-wrap gap-6">
+                      <div className="flex flex-wrap gap-6 mt-[2rem]">
                           <div className="flex items-center gap-2">
                               <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                                   <Users className="w-5 h-5 text-primary" />
